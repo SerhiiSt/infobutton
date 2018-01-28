@@ -15,7 +15,6 @@ namespace InfobuttonMerckTests
         public void SubmitICD9RequestTest()
         {
              InfobuttonPage.InputCodeVc("049").WithMainSearchCriteriaCodeSystemVcs(VcsCodes.Icd9).Submit();
-            InfobuttonResponcePage.getResponce();
              
 
              
