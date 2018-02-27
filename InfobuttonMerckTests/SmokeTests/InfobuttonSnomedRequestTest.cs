@@ -15,6 +15,7 @@ namespace InfobuttonMerckTests
         public void SubmitSnomedRequestTest()
         {
             InfobuttonPage.InputCodeVc("222008").WithMainSearchCriteriaCodeSystemVcs(VcsCodes.SnomedCt).Submit();
+            InfobuttonResponcePageSnomed.getResponce();
 
         }
 

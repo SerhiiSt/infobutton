@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
@@ -34,9 +35,9 @@ namespace Infobutton_Merck_Automation
         }
 
         public static void Wait(TimeSpan timeSpan)
-        { 
+        {
             //Need to write wait
-        }
+            Thread.Sleep(timeSpan);        }
 
         public static void NoWait(Action action)
         {

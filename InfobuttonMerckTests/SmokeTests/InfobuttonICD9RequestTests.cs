@@ -15,11 +15,7 @@ namespace InfobuttonMerckTests
         public void SubmitICD9RequestTest()
         {
              InfobuttonPage.InputCodeVc("049").WithMainSearchCriteriaCodeSystemVcs(VcsCodes.Icd9).Submit();
-             
-
-             
-             
-            
+             InfobuttonResponcePageICD9.getResponce();
         }
 
         [TestMethod]
@@ -27,14 +23,15 @@ namespace InfobuttonMerckTests
         {
             InfobuttonPage.SelectHtmlKnowledgeResponceType();
             InfobuttonPage.InputCodeVc("049").WithMainSearchCriteriaCodeSystemVcs(VcsCodes.Icd9).Submit();
-
+            InfobuttonResponcePageHtmlICD9.getResponce();
         }
 
         [TestMethod]
         public void GenerateQueryURLICD9RequestTest()
         {
             InfobuttonPage. InputCodeVc("049"). WithMainSearchCriteriaCodeSystemVcs(VcsCodes.Icd9).GenerateQueryUrl();
-
+            InfobuttonPage.GetQuery();
+            InfobuttonResponcePageICD9.getOutput();
         }
 
 

@@ -15,6 +15,7 @@ namespace InfobuttonMerckTests
         public void SubmitICD10RequestTest()
         {
             InfobuttonPage.InputCodeVc("F17.210").WithMainSearchCriteriaCodeSystemVcs(VcsCodes.Icd10).Submit();
+            InfobuttonResponcePageICD10.getResponce();
 
         }
 
